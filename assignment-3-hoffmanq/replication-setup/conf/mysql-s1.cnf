@@ -1,0 +1,31 @@
+#
+# This is a MySQL configuration for node #1 in a group replication setup.
+# The configuration comes basically directly from the MySQL documentation on
+# group replication:
+#
+# https://dev.mysql.com/doc/refman/8.0/en/group-replication-configuring-instances.html
+#
+
+[mysqld]
+
+#
+# Disable other storage engines
+#
+disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY"
+
+#
+# Replication configuration parameters
+#
+server_id=1
+gtid_mode=ON
+enforce_gtid_consistency=ON
+
+#
+# Group Replication configuration
+#
+plugin_load_add='group_replication.so'
+group_replication_group_name="20c92f1e-0817-11ef-94af-0242ac110002"
+group_replication_start_on_boot=off
+group_replication_local_address="mysql-s1:33061"
+group_replication_group_seeds="mysql-s1:33061"
+group_replication_bootstrap_group=off

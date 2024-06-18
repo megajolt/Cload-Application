@@ -1,0 +1,6 @@
+
+start database:
+docker run -d --name mysql-server --network mysql-net -p "3306:8000" -e "MYSQL_RANDOM_ROOT_PASSWORD=yes" -e "MYSQL_DATABASE=database" -e "MYSQL_USER=user" -e "MYSQL_PASSWORD=password" mysql
+
+start api:
+

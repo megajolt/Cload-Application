@@ -1,0 +1,20 @@
+[
+{
+    "name": "student",
+    "email":"student",
+    "password":"password",
+    "role":0
+},
+{
+    "name": "instructor",
+    "email":"instructor",
+    "password":"password",
+    "role":1
+},
+{
+    "name": "admin",
+    "email":"admin",
+    "password":"password",
+    "role":2
+}
+]

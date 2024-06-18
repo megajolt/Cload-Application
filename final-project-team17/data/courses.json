@@ -1,0 +1,10 @@
+[
+  {
+    "subject": "Computer Science",
+    "number": 101,
+    "title": "Introduction to Programming",
+    "term": "Spring 2024",
+    "userId": 2,
+    "enrolled": { "students": [] }
+  } 
+]
